@@ -9,9 +9,9 @@ import UIKit
 
 class GreetingViewController: UIViewController {
     
-    private var numberPhone = "+375447363803"
-    private var email = "shabunia.alex@icloud.com"
-    private var name = "Alexander"
+    private let numberPhone = "+375447363803"
+    private let email = "shabunia.alex@icloud.com"
+    private let name = "Alexander"
     
     @IBOutlet weak var myNameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!

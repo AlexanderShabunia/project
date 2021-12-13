@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA7614CF27626FCF004EEA3F /* AboutmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7614CE27626FCF004EEA3F /* AboutmeViewController.swift */; };
+		FA7614CF27626FCF004EEA3F /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7614CE27626FCF004EEA3F /* AboutMeViewController.swift */; };
 		FA7614D12762739B004EEA3F /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7614D02762739B004EEA3F /* HobbyViewController.swift */; };
 		FA7614D327629D12004EEA3F /* PhotoHobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7614D227629D12004EEA3F /* PhotoHobbyViewController.swift */; };
 		FAEAE2992761370B00234A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEAE2982761370B00234A56 /* AppDelegate.swift */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA7614CE27626FCF004EEA3F /* AboutmeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutmeViewController.swift; sourceTree = "<group>"; };
+		FA7614CE27626FCF004EEA3F /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		FA7614D02762739B004EEA3F /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		FA7614D227629D12004EEA3F /* PhotoHobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHobbyViewController.swift; sourceTree = "<group>"; };
 		FAEAE2952761370B00234A56 /* ShabunAlex_HW2.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShabunAlex_HW2.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +100,7 @@
 				FAEAE2982761370B00234A56 /* AppDelegate.swift */,
 				FAEAE29A2761370B00234A56 /* SceneDelegate.swift */,
 				FAEAE29C2761370B00234A56 /* GreetingViewController.swift */,
-				FA7614CE27626FCF004EEA3F /* AboutmeViewController.swift */,
+				FA7614CE27626FCF004EEA3F /* AboutMeViewController.swift */,
 				FA7614D02762739B004EEA3F /* HobbyViewController.swift */,
 				FA7614D227629D12004EEA3F /* PhotoHobbyViewController.swift */,
 				FAEAE29E2761370B00234A56 /* Main.storyboard */,
@@ -246,7 +246,7 @@
 				FAEAE29D2761370B00234A56 /* GreetingViewController.swift in Sources */,
 				FAEAE2992761370B00234A56 /* AppDelegate.swift in Sources */,
 				FA7614D12762739B004EEA3F /* HobbyViewController.swift in Sources */,
-				FA7614CF27626FCF004EEA3F /* AboutmeViewController.swift in Sources */,
+				FA7614CF27626FCF004EEA3F /* AboutMeViewController.swift in Sources */,
 				FAEAE29B2761370B00234A56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

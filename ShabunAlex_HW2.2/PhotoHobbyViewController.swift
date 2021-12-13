@@ -10,6 +10,7 @@ import UIKit
 class PhotoHobbyViewController: UIViewController {
     
     var descriptionHobby: String?
+    var choiseHobby: String?
     
     @IBOutlet weak var descriptionHobbyLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -19,14 +20,7 @@ class PhotoHobbyViewController: UIViewController {
         guard let descriptionHobby = self.descriptionHobby else { return }
         descriptionHobbyLabel.text = "\(descriptionHobby)"
         
-        if descriptionHobbyLabel.text == "I like to go fishing" {
-            imageView.image = UIImage(named: "Fishing")} else if
-                descriptionHobbyLabel.text == "I love cars and everything connected with them" {
-                imageView.image = UIImage(named: "Auto")
-            } else {
-                imageView.image = UIImage(named: "Friends")
-            }
+        imageView.image = UIImage(named: "\(choiseHobby ?? "")")
+        
     }
-    
 }
-
