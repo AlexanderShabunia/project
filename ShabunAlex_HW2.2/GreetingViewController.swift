@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GreetingViewController.swift
 //  ShabunAlex_HW2.2
 //
 //  Created by Alex on 8.12.21.
@@ -7,29 +7,34 @@
 
 import UIKit
 
+private let numberPhone = "+375447363803"
+private let email = "shabunia.alex@icloud.com"
+private let name = "Alexander"
+
 class GreetingViewController: UIViewController {
-    
-    private let numberPhone = "+375447363803"
-    private let email = "shabunia.alex@icloud.com"
-    private let name = "Alexander"
     
     @IBOutlet weak var myNameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    @IBAction func showNumber(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Number", message: numberPhone, preferredStyle: .alert)
-        let okButton = UIAlertAction(title: "ok", style: .default, handler: nil)
-        alert.addAction(okButton)
+    func choiseAlert (title: String, message: String) {
         
-        present(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "ok",
+                                   style: .default,
+                                   handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func showNumber(_ sender: UIButton) {
+        choiseAlert(title: "Number", message: numberPhone)
     }
     
     @IBAction func showEmail(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Email", message: email, preferredStyle: .alert)
-        let okButton = UIAlertAction(title: "ok", style: .default, handler: nil)
-        alert.addAction(okButton)
-        
-        present(alert, animated: true, completion: nil)
+        choiseAlert(title: "Email", message: email)
     }
     
     override func viewDidLoad() {
@@ -41,6 +46,5 @@ class GreetingViewController: UIViewController {
         myNameLabel.text = "Hi, my name's \(name)!"
         
     }
-    
 }
 

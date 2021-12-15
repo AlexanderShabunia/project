@@ -13,16 +13,18 @@ class HobbyViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let witchIdentifier = segue.identifier
-        switch witchIdentifier {
-        case "FishSegueIdentifier": guard let fishSegueIdentifier = segue.destination as? PhotoHobbyViewController
-            else { return }
+        let identifier = segue.identifier
+        switch  identifier {
+        case "FishSegueIdentifier":
+            guard let fishSegueIdentifier = segue.destination as? HobbyDescriptionViewController else { return }
             fishSegueIdentifier.descriptionHobby = "I like to go fishing"
             fishSegueIdentifier.choiseHobby = "Fishing"
-        case "AutoSegueIdentifier": guard let autoSegueIdentifier = segue.destination as? PhotoHobbyViewController else { return }
+        case "AutoSegueIdentifier":
+            guard let autoSegueIdentifier = segue.destination as? HobbyDescriptionViewController else { return }
             autoSegueIdentifier.descriptionHobby = "I love cars and everything connected with them"
             autoSegueIdentifier.choiseHobby = "Auto"
-        case "FriendsSegueIdentifier": guard let friendsSegueIdentifier = segue.destination as? PhotoHobbyViewController else { return }
+        case "FriendsSegueIdentifier":
+            guard let friendsSegueIdentifier = segue.destination as? HobbyDescriptionViewController else { return }
             friendsSegueIdentifier.descriptionHobby = "I like to get together with friends and play board games"
             friendsSegueIdentifier.choiseHobby = "Friends"
         default:

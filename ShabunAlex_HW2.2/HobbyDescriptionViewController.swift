@@ -1,5 +1,5 @@
 //
-//  photoHobbyViewController.swift
+//  HobbyDescriptionViewController.swift
 //  ShabunAlex_HW2.2
 //
 //  Created by Alex on 9.12.21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PhotoHobbyViewController: UIViewController {
+class HobbyDescriptionViewController: UIViewController {
     
     var descriptionHobby: String?
     var choiseHobby: String?
