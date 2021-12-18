@@ -7,7 +7,7 @@
 
 import UIKit
 
-private let numberPhone = "+375447363803"
+private let phoneNumber = "+375447363803"
 private let email = "shabunia.alex@icloud.com"
 private let name = "Alexander"
 
@@ -30,7 +30,7 @@ class GreetingViewController: UIViewController {
     }
     
     @IBAction func showNumber(_ sender: UIButton) {
-        showAlert(title: "Number", message: numberPhone)
+        showAlert(title: "Number", message: phoneNumber)
     }
     
     @IBAction func showEmail(_ sender: UIButton) {
