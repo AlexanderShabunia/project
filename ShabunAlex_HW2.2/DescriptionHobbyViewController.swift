@@ -1,5 +1,5 @@
 //
-//  HobbyDescriptionViewController.swift
+//  DescriptionHobbyViewController.swift
 //  ShabunAlex_HW2.2
 //
 //  Created by Alex on 9.12.21.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-class HobbyDescriptionViewController: UIViewController {
+class DescriptionHobbyViewController: UIViewController {
     
     var descriptionHobby: String?
-    var choiseHobby: String?
+    var choicePictureHobby: UIImage?
     
     @IBOutlet weak var descriptionHobbyLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
@@ -20,7 +20,7 @@ class HobbyDescriptionViewController: UIViewController {
         guard let descriptionHobby = self.descriptionHobby else { return }
         descriptionHobbyLabel.text = "\(descriptionHobby)"
         
-        imageView.image = UIImage(named: "\(choiseHobby ?? "")")
+        imageView.image = choicePictureHobby
         
     }
 }

@@ -16,7 +16,7 @@ class GreetingViewController: UIViewController {
     @IBOutlet weak var myNameLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    func choiseAlert (title: String, message: String) {
+    func showAlert (title: String, message: String) {
         
         let alert = UIAlertController(title: title,
                                       message: message,
@@ -30,11 +30,11 @@ class GreetingViewController: UIViewController {
     }
     
     @IBAction func showNumber(_ sender: UIButton) {
-        choiseAlert(title: "Number", message: numberPhone)
+        showAlert(title: "Number", message: numberPhone)
     }
     
     @IBAction func showEmail(_ sender: UIButton) {
-        choiseAlert(title: "Email", message: email)
+        showAlert(title: "Email", message: email)
     }
     
     override func viewDidLoad() {
