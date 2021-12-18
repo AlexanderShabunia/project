@@ -16,17 +16,17 @@ class HobbyViewController: UIViewController {
         let identifier = segue.identifier
         switch  identifier {
         case "FishSegueIdentifier":
-            guard let fishSegueIdentifier = segue.destination as? HobbyDescriptionViewController else { return }
+            guard let fishSegueIdentifier = segue.destination as? DescriptionHobbyViewController else { return }
             fishSegueIdentifier.descriptionHobby = "I like to go fishing"
-            fishSegueIdentifier.choiseHobby = "Fishing"
+            fishSegueIdentifier.choicePictureHobby = UIImage.init(named: "Fishing")
         case "AutoSegueIdentifier":
-            guard let autoSegueIdentifier = segue.destination as? HobbyDescriptionViewController else { return }
+            guard let autoSegueIdentifier = segue.destination as? DescriptionHobbyViewController else { return }
             autoSegueIdentifier.descriptionHobby = "I love cars and everything connected with them"
-            autoSegueIdentifier.choiseHobby = "Auto"
+            autoSegueIdentifier.choicePictureHobby = UIImage.init(named: "Auto")
         case "FriendsSegueIdentifier":
-            guard let friendsSegueIdentifier = segue.destination as? HobbyDescriptionViewController else { return }
+            guard let friendsSegueIdentifier = segue.destination as? DescriptionHobbyViewController else { return }
             friendsSegueIdentifier.descriptionHobby = "I like to get together with friends and play board games"
-            friendsSegueIdentifier.choiseHobby = "Friends"
+            friendsSegueIdentifier.choicePictureHobby = UIImage.init(named: "Friends")
         default:
             break
         }

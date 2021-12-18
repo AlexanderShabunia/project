@@ -146,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="1701.5999999999999" y="318.89055472263868"/>
         </scene>
-        <!--Hobby Description View Controller-->
+        <!--Description Hobby View Controller-->
         <scene sceneID="w1H-NG-aMT">
             <objects>
-                <viewController id="Cpw-Ol-vZu" customClass="HobbyDescriptionViewController" customModule="ShabunAlex_HW2_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cpw-Ol-vZu" customClass="DescriptionHobbyViewController" customModule="ShabunAlex_HW2_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6kF-iJ-Uf3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
